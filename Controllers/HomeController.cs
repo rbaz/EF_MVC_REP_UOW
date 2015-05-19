@@ -26,5 +26,12 @@ namespace EF_MVC_Repository_UOW.Controllers
 
             return View();
         }
+
+        public ActionResult Project()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }

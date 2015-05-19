@@ -7,12 +7,12 @@ namespace EF_MVC_Repository_UOW.Models
 {
     public class ProjectTasks
     {
-        public Guid ProjectTaskID { get; set; }
-        public string AssignedTo { get; set; }
+        public int ProjectTaskID { get; set; }
+        public int AssignedTo { get; set; }
         public DateTime TaskStartDate { get; set; }
         public DateTime TaskEndDate { get; set; }
         public int TaskCompletion { get; set; }
-        public string UserStoryID { get; set; }
+        public int UserStoryID { get; set; }
 
     }
 }

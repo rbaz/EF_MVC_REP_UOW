@@ -7,8 +7,8 @@ namespace EF_MVC_Repository_UOW.Models
 {
     public class UserStories
     {
-        public Guid UserStoryID { get; set; }
+        public int UserStoryID { get; set; }
         public string Story {get; set;}
-        public string ProjectID {get; set;}
+        public int ProjectID {get; set;}
     }
 }

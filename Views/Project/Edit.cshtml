@@ -1,0 +1,19 @@
+﻿@using EF_MVC_Repository_UOW.Models;
+@model EF_MVC_Repository_UOW.Models.Project
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+@using (Html.BeginForm("Edit", "Project", new { id = Model.ProjectID }, FormMethod.Post))
+{
+    <table style="border:groove">
+        <tr><td><b>Project Name </b></td><td>@Html.EditorFor(x => x.ProjectName)</td></tr>
+        <tr><td><b>Start Date</b></td><td>@Html.EditorFor(x => x.StartDate)</td></tr>
+        <tr><td><b>End Date</b></td><td>@Html.EditorFor(x => x.EndDate)</td></tr>
+        <tr><td><b>Customer Name</b></td><td>@Html.EditorFor(x => x.CustomerName)</td></tr>
+        <tr><td><b>Project ID</b><td>@Html.EditorFor(x => x.ProjectID)</td></tr>
+        <tr><td><button type="submit" name="submit" value="@Model.ProjectID">Edit Project</button></td></tr>
+    </table>
+}

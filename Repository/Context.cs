@@ -9,8 +9,8 @@ namespace EF_MVC_Repository_UOW.Repository
 {
     public class Context : DbContext
     {
-        public Context()
-            : base()
+        public Context(string connString)
+            : base("mpDBConnection")
         {
 
         }

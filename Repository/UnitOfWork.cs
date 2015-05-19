@@ -32,7 +32,7 @@ namespace EF_MVC_Repository_UOW.Repository
 
         public UnitOfWork()
         {
-            _context=new Context();
+            _context=new Context("mpDBConnection");
         }
 
         public void Save()
@@ -44,4 +44,5 @@ namespace EF_MVC_Repository_UOW.Repository
         {
             throw new NotImplementedException();
         }
+}
 }
